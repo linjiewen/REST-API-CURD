@@ -40,7 +40,7 @@ use <?= ltrim($generator->searchModelClass, '\\') . (isset($searchModelAlias) ? 
 *
 * @package <?= StringHelper::dirname(ltrim($generator->controllerClass, '\\')) ?>
 */
-class <?= $controllerClass ?> extends <?= StringHelper::basename($generator->baseControllerClass) . "\n" ?>
+class <?= $controllerClass ?> extends \yiiComponent\restApi\restAction\RestActiveController
 {
     public $modelClass = '<?= ltrim($generator->modelClass, '\\') ?>';
 
